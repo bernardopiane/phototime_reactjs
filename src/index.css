@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: local('GothamRounded-Medium'), url(./fonts/GothamRoundedMedium_21022.ttf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+  font-family: 'GothamRounded-Bold';
+  src: local('GothamRounded-Bold'), url(./fonts/GothamRoundedBold_21016.ttf) format('truetype');
+}
+
+@font-face{
+  font-family: 'GothamRounded-Book';
+  src: local('GothamRounded-Book'), url(./fonts/GothamRounded-Book.otf) format('truetype');
+}
+
+body{
+  font-family: GothamRounded-Medium;
+  letter-spacing: 0.15em;
 }
