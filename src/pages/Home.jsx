@@ -6,13 +6,13 @@ import Fourth from "../sections/Fourth";
 import Second from "../sections/Second";
 import Sixth from "../sections/Sixth";
 import Third from "../sections/Third";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <Switch>
           <Route path="/" exact>
             <First />
@@ -29,7 +29,7 @@ export default function Home() {
           </Route>
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </>
   );
 }
